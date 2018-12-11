@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Misc23</title>
+</head>
+<body>
+
+<script>
+    var number = "1010111";
+    var numArray = number.split('');
+    var newArr = [];
+    console.log(numArray);
+    for (i=0; i<numArray.length; i++){
+        if (i%3 ==0){
+            numArray[i]+= ",";
+            newArr.push(numArray[i]);
+        }
+        else{
+            newArr.push(numArray[i])
+        }
+    }
+    console.log(newArr.toString())
+</script>
+
+</body>
+</html>
